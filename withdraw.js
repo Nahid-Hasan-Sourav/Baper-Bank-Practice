@@ -9,8 +9,10 @@ document
 
     if (WithdrawBalanceNumber > BalanceAmountNUmber) {
       alert("Don't have enough amount");
+      WithdrawBalanceString.value = "";
     } else if (WithdrawBalanceNumber <= 0) {
       alert("please provide positive amount number");
+      WithdrawBalanceString.value = "";
     }
      else {
       const PreviousWithdrawAmount = document.getElementById("withdraw-amount");
